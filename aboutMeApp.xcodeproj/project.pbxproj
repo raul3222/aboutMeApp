@@ -14,10 +14,12 @@
 		AD3425C52727FBCF00DCD524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3425C42727FBCF00DCD524 /* Assets.xcassets */; };
 		AD3425C82727FBCF00DCD524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3425C62727FBCF00DCD524 /* LaunchScreen.storyboard */; };
 		AD3425D22728062400DCD524 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3425D12728062400DCD524 /* WelcomeScreenViewController.swift */; };
+		AD5E5F63272C85750065917A /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E5F62272C85750065917A /* UserInfo.swift */; };
+		AD5E5F6B272C96420065917A /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5E5F6A272C96420065917A /* AboutMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD3425B82727FBCD00DCD524 /* loginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD3425B82727FBCD00DCD524 /* aboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD3425BB2727FBCD00DCD524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD3425BD2727FBCD00DCD524 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AD3425BF2727FBCD00DCD524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		AD3425C72727FBCF00DCD524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD3425C92727FBCF00DCD524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD3425D12728062400DCD524 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		AD5E5F62272C85750065917A /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		AD5E5F6A272C96420065917A /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +46,7 @@
 		AD3425AF2727FBCD00DCD524 = {
 			isa = PBXGroup;
 			children = (
-				AD3425BA2727FBCD00DCD524 /* loginApp */,
+				AD3425BA2727FBCD00DCD524 /* aboutMeApp */,
 				AD3425B92727FBCD00DCD524 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,32 +54,74 @@
 		AD3425B92727FBCD00DCD524 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD3425B82727FBCD00DCD524 /* loginApp.app */,
+				AD3425B82727FBCD00DCD524 /* aboutMeApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD3425BA2727FBCD00DCD524 /* loginApp */ = {
+		AD3425BA2727FBCD00DCD524 /* aboutMeApp */ = {
+			isa = PBXGroup;
+			children = (
+				AD5E5F61272C855E0065917A /* Models */,
+				AD5E5F67272C89090065917A /* Configs */,
+				AD5E5F64272C88CC0065917A /* ViewControllers */,
+				AD5E5F65272C88DD0065917A /* StoryBoards */,
+				AD5E5F66272C88F30065917A /* Resources */,
+				AD3425C62727FBCF00DCD524 /* LaunchScreen.storyboard */,
+			);
+			path = aboutMeApp;
+			sourceTree = "<group>";
+		};
+		AD5E5F61272C855E0065917A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD5E5F62272C85750065917A /* UserInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD5E5F64272C88CC0065917A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD3425D12728062400DCD524 /* WelcomeScreenViewController.swift */,
+				AD3425BF2727FBCD00DCD524 /* ViewController.swift */,
+				AD5E5F6A272C96420065917A /* AboutMeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AD5E5F65272C88DD0065917A /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				AD3425C12727FBCD00DCD524 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		AD5E5F66272C88F30065917A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD3425C42727FBCF00DCD524 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD5E5F67272C89090065917A /* Configs */ = {
 			isa = PBXGroup;
 			children = (
 				AD3425BB2727FBCD00DCD524 /* AppDelegate.swift */,
 				AD3425BD2727FBCD00DCD524 /* SceneDelegate.swift */,
-				AD3425BF2727FBCD00DCD524 /* ViewController.swift */,
-				AD3425D12728062400DCD524 /* WelcomeScreenViewController.swift */,
-				AD3425C12727FBCD00DCD524 /* Main.storyboard */,
-				AD3425C42727FBCF00DCD524 /* Assets.xcassets */,
-				AD3425C62727FBCF00DCD524 /* LaunchScreen.storyboard */,
 				AD3425C92727FBCF00DCD524 /* Info.plist */,
 			);
-			path = loginApp;
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD3425B72727FBCD00DCD524 /* loginApp */ = {
+		AD3425B72727FBCD00DCD524 /* aboutMeApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD3425CC2727FBCF00DCD524 /* Build configuration list for PBXNativeTarget "loginApp" */;
+			buildConfigurationList = AD3425CC2727FBCF00DCD524 /* Build configuration list for PBXNativeTarget "aboutMeApp" */;
 			buildPhases = (
 				AD3425B42727FBCD00DCD524 /* Sources */,
 				AD3425B52727FBCD00DCD524 /* Frameworks */,
@@ -85,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = loginApp;
+			name = aboutMeApp;
 			productName = loginApp;
-			productReference = AD3425B82727FBCD00DCD524 /* loginApp.app */;
+			productReference = AD3425B82727FBCD00DCD524 /* aboutMeApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +151,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AD3425B32727FBCD00DCD524 /* Build configuration list for PBXProject "loginApp" */;
+			buildConfigurationList = AD3425B32727FBCD00DCD524 /* Build configuration list for PBXProject "aboutMeApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,7 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD3425B72727FBCD00DCD524 /* loginApp */,
+				AD3425B72727FBCD00DCD524 /* aboutMeApp */,
 			);
 		};
 /* End PBXProject section */
@@ -144,6 +190,8 @@
 				AD3425C02727FBCD00DCD524 /* ViewController.swift in Sources */,
 				AD3425D22728062400DCD524 /* WelcomeScreenViewController.swift in Sources */,
 				AD3425BC2727FBCD00DCD524 /* AppDelegate.swift in Sources */,
+				AD5E5F63272C85750065917A /* UserInfo.swift in Sources */,
+				AD5E5F6B272C96420065917A /* AboutMeViewController.swift in Sources */,
 				AD3425BE2727FBCD00DCD524 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +343,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RGKK797JHY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = loginApp/Info.plist;
+				INFOPLIST_FILE = aboutMeApp/Configs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,7 +372,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RGKK797JHY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = loginApp/Info.plist;
+				INFOPLIST_FILE = aboutMeApp/Configs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -347,7 +395,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD3425B32727FBCD00DCD524 /* Build configuration list for PBXProject "loginApp" */ = {
+		AD3425B32727FBCD00DCD524 /* Build configuration list for PBXProject "aboutMeApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD3425CA2727FBCF00DCD524 /* Debug */,
@@ -356,7 +404,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD3425CC2727FBCF00DCD524 /* Build configuration list for PBXNativeTarget "loginApp" */ = {
+		AD3425CC2727FBCF00DCD524 /* Build configuration list for PBXNativeTarget "aboutMeApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD3425CD2727FBCF00DCD524 /* Debug */,
