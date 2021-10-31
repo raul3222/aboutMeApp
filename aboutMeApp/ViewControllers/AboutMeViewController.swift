@@ -8,22 +8,26 @@
 import UIKit
 
 class AboutMeViewController: UIViewController {
-
+    @IBOutlet var fullName: UILabel!
+    @IBOutlet var dateOfBirth: UILabel!
+    @IBOutlet var cityOfResidence: UILabel!
+    
+    var name: String!
+    var date: String!
+    var city: String!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if let name = name {
+            fullName.text = name
+        }
+        if let date = date {
+            dateOfBirth.text = date
+        }
+        if let city = city {
+            cityOfResidence.text = city
+        }
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

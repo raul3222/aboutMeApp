@@ -12,6 +12,8 @@ struct UserInfo {
    let password = "123"
    let name = "Raul"
    let lastName = "Shafigin"
+   let dateOfBirth = "06.10.1993"
+   let cityOfResidence = "Kaliningrad"
 
     var fullName: String{
         name + " " + lastName

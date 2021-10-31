@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="loginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="aboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,7 +92,7 @@
         <!--Home-->
         <scene sceneID="1fa-bT-mIo">
             <objects>
-                <viewController id="m1d-5E-Na0" customClass="WelcomeScreenViewController" customModule="loginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m1d-5E-Na0" customClass="WelcomeScreenViewController" customModule="aboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8AN-xm-XM0" customClass="Welco">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,36 +137,13 @@
         <!--Raul Shafigin-->
         <scene sceneID="gqj-EJ-7t0">
             <objects>
-                <viewController id="KxL-du-sFN" sceneMemberID="viewController">
+                <viewController id="KxL-du-sFN" customClass="AboutMeViewController" customModule="aboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MAA-yj-Cxk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mj3-pe-eXR">
-                                <rect key="frame" x="52" y="323" width="222.5" height="77.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Raul Shafigin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pd-Fv-k3W">
-                                        <rect key="frame" x="0.0" y="0.0" width="99" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth: 06.10.1993" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0S-Vx-33f">
-                                        <rect key="frame" x="0.0" y="28.5" width="188.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City of residence: Kaliningrad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqD-RY-ftF">
-                                        <rect key="frame" x="0.0" y="57" width="222.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Be0-nE-lOS">
-                                <rect key="frame" x="164.5" y="477" width="85" height="31"/>
+                                <rect key="frame" x="164.5" y="463.5" width="85" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="tE7-lj-bwh"/>
                                 </constraints>
@@ -183,19 +160,69 @@
                                     <constraint firstAttribute="width" constant="1024" id="c1A-bi-91c"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="Bdt-v9-GlO">
+                                <rect key="frame" x="52" y="286" width="197" height="77.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mj3-pe-eXR">
+                                        <rect key="frame" x="0.0" y="0.0" width="133.5" height="77.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pd-Fv-k3W">
+                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0S-Vx-33f">
+                                                <rect key="frame" x="0.0" y="28.5" width="100.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City of residence:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqD-RY-ftF">
+                                                <rect key="frame" x="0.0" y="57" width="133.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3nI-Bd-KeG">
+                                        <rect key="frame" x="155.5" y="28.5" width="41.5" height="49"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFN-Ll-0Di">
+                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7c1-AS-a3b">
+                                                <rect key="frame" x="0.0" y="28.5" width="41.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qPE-xP-9mT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="DMq-ow-1jj" firstAttribute="top" secondItem="qPE-xP-9mT" secondAttribute="top" constant="37" id="3Hc-RU-PjG"/>
                             <constraint firstItem="DMq-ow-1jj" firstAttribute="centerX" secondItem="MAA-yj-Cxk" secondAttribute="centerX" id="6bm-qY-zxT"/>
-                            <constraint firstItem="Be0-nE-lOS" firstAttribute="top" secondItem="mj3-pe-eXR" secondAttribute="bottom" constant="76.5" id="B46-59-hrP"/>
-                            <constraint firstItem="mj3-pe-eXR" firstAttribute="leading" secondItem="qPE-xP-9mT" secondAttribute="leading" constant="52" id="DeB-aI-pN8"/>
-                            <constraint firstItem="mj3-pe-eXR" firstAttribute="top" secondItem="DMq-ow-1jj" secondAttribute="bottom" constant="70" id="bn1-oM-ztS"/>
+                            <constraint firstItem="Be0-nE-lOS" firstAttribute="top" secondItem="Bdt-v9-GlO" secondAttribute="bottom" constant="100" id="8Tc-Mp-fFK"/>
+                            <constraint firstItem="Bdt-v9-GlO" firstAttribute="top" secondItem="DMq-ow-1jj" secondAttribute="bottom" constant="33" id="XL1-af-KRW"/>
                             <constraint firstItem="Be0-nE-lOS" firstAttribute="centerX" secondItem="MAA-yj-Cxk" secondAttribute="centerX" id="dfU-8v-sDY"/>
+                            <constraint firstItem="Bdt-v9-GlO" firstAttribute="leading" secondItem="qPE-xP-9mT" secondAttribute="leading" constant="52" id="hQ0-T3-hG7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Raul Shafigin" id="Wh7-IM-BaY"/>
+                    <connections>
+                        <outlet property="cityOfResidence" destination="7c1-AS-a3b" id="jan-0w-EUI"/>
+                        <outlet property="dateOfBirth" destination="AFN-Ll-0Di" id="unu-gx-Thj"/>
+                        <outlet property="fullName" destination="3pd-Fv-k3W" id="bUy-4M-Uxq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agf-cH-EV6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -235,6 +262,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="g0T-vT-rZ2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LDs-F7-PX9">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

@@ -28,9 +28,12 @@ class ViewController: UIViewController {
             if let welcomeScreenVC = viewController as? WelcomeScreenViewController{
                 welcomeScreenVC.userName = user.fullName
             }
-//            else if let navigationVC = viewController as? UINavigationController{
-//                let aboutVC = navigationVC.topViewController as! AboutMeViewController
-//            }
+            else if let navigationVC = viewController as? UINavigationController{
+                let aboutVC = navigationVC.topViewController as! AboutMeViewController
+                aboutVC.name = user.fullName
+                aboutVC.date = user.dateOfBirth
+                aboutVC.city = user.cityOfResidence
+            }
 
         }
     }
